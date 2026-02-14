@@ -37,6 +37,7 @@ public class SortAccordingToAnArray {
             }
         }
 
+
         for(int i=0;i<a.length;i++){
             while(freq[i]>0){
                 a[ind]=i;
