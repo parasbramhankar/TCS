@@ -9,6 +9,7 @@ public class ClimbingStairs {
 
         if(n<=2){
             System.out.println(n);
+            return;
         }
 
         int prev1=2;
@@ -22,7 +23,5 @@ public class ClimbingStairs {
         }
 
         System.out.println(prev1);
-
-
     }
 }
