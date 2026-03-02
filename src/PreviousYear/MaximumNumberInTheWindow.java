@@ -1,6 +1,7 @@
 package PreviousYear;
 
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,7 +19,18 @@ public class MaximumNumberInTheWindow {
     public static void main(String[] args) {
         int[]arr=new int[]{1, 3, -1, -3, 5, 3, 6, 7};
         int k=3;
+        ArrayList<Integer>arrList=new ArrayList<>();
+        int n=arr.length;
 
-
+        for(int i=0;i<n-k+1;i++){
+            int max=Integer.MIN_VALUE;
+            for(int j=i;j<i+k;j++){
+                if(arr[j]>max){
+                    max=arr[j];
+                }
+            }
+            arrList.add(max);
+        }
+        System.out.println(arrList);
     }
 }
